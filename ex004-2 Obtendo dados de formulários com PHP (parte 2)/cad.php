@@ -15,9 +15,13 @@
     </header>
     <main>
         <?php 
-        // $_REQUEST funciona para as superglobais: $_GET, $_POST e $_COOKIES
-            var_dump($_GET);
-        ?>
+        // $_REQUEST funciona para todas as Variáveis Superglobais: $_GET, $_POST e $_COOKIES
+        // ?? é o Operador de Coalescência Nula: a partir do PHP Versão 7
+            $nome = $_GET["nome"] ?? "Sem Nome";
+            $sobrenome = $_GET["sobrenome"] ?? "Desconhecido";
+            echo "<p>É um prazer te conhecer, <strong>$nome $sobrenome</strong>! Este é o meu site!</p>";
+        ?> 
+        <p><a href="javascript:history.go(-1)">Voltar para a página anterior</a></p>
     </main>
-</body>
+    </body>
 </html>
