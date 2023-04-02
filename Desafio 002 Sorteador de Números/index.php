@@ -17,8 +17,8 @@
         <h2>Gerador de Números Aleatórios</h2>
         <?php 
             echo "<p>Gerando um Número Aleatóriamente entre 0 e 100...</p>";
-            $num = mt_rand(0, 100);
-            echo "<p>O Número Gerado foi: <strong>$num</strong></p>";
+            $numero = mt_rand(0, 100);
+            echo "<p>O Número Gerado foi: <strong>$numero</strong></p>";
         ?>
         <button onclick="javascript:document.location.reload()">&#x1F504; Gerar outro</button>
     </main>
